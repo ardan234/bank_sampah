@@ -3,69 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bank Sampah Nusantara - Kelola sampah dengan bijak, dapatkan manfaat ekonomi, dan selamatkan lingkungan.">
     <title>Beranda - Bank Sampah Nusantara</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♻️</text></svg>">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
+    <!-- Header & Navigation -->
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Navigasi utama">
             <div class="nav-container">
                 <div class="logo">
-                    <i class="fas fa-recycle"></i>
+                    <i class="fas fa-recycle" aria-hidden="true"></i>
                     <span>Bank Sampah Nusantara</span>
                 </div>
-                <button class="menu-toggle" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
+                <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
                 </button>
                 <ul class="nav-menu">
                     <li><a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Beranda</a></li>
                     <li><a href="tentang.html" class="nav-link"><i class="fas fa-info-circle"></i> Tentang</a></li>
-                    <li><a href="jenis.html" class="nav-link"><i class="fas fa-trash-alt"></i> Jenis Sampah</a></li>
+                    <!-- PERHATIAN: Periksa nama file di repo Anda! -->
+                    <!-- Jika nama file di repo adalah "jents.html", ganti link di bawah: -->
+                    <li><a href="jents.html" class="nav-link"><i class="fas fa-trash-alt"></i> Jenis Sampah</a></li>
+                    <!-- Jika ingin rename file, ganti dengan: -->
+                    <!-- <li><a href="jenis.html" class="nav-link"><i class="fas fa-trash-alt"></i> Jenis Sampah</a></li> -->
                     <li><a href="kontak.html" class="nav-link"><i class="fas fa-envelope"></i> Kontak</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
+    <!-- Main Content -->
+    <main role="main">
+        <!-- Hero Section -->
+        <section class="hero" aria-label="Hero section">
             <div class="hero-content">
                 <h1 class="hero-title">Bank Sampah Nusantara</h1>
                 <p class="hero-subtitle">Kelola sampahmu, selamatkan bumi, dan dapatkan manfaatnya.</p>
                 <div class="hero-buttons">
                     <a href="tentang.html" class="btn btn-primary">Pelajari Lebih Lanjut</a>
-                    <a href="jenis.html" class="btn btn-secondary">Lihat Jenis Sampah</a>
+                    <a href="jents.html" class="btn btn-secondary">Lihat Jenis Sampah</a>
                 </div>
             </div>
-            <div class="hero-wave">
+            <div class="hero-wave" aria-hidden="true">
                 <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
                 </svg>
             </div>
         </section>
 
-        <section class="features">
+        <!-- Features Section -->
+        <section class="features" aria-label="Fitur utama">
             <div class="container">
                 <h2 class="section-title">Mengapa Memilih Kami?</h2>
                 <div class="features-grid">
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <i class="fas fa-leaf"></i>
+                            <i class="fas fa-leaf" aria-hidden="true"></i>
                         </div>
                         <h3>Ramah Lingkungan</h3>
                         <p>Mengelola sampah dengan cara yang ramah lingkungan dan berkelanjutan.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <i class="fas fa-hand-holding-usd"></i>
+                            <i class="fas fa-hand-holding-usd" aria-hidden="true"></i>
                         </div>
                         <h3>Manfaat Ekonomi</h3>
                         <p>Dapatkan keuntungan dari sampah yang Anda kumpulkan dan tabung.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <i class="fas fa-users"></i>
+                            <i class="fas fa-users" aria-hidden="true"></i>
                         </div>
                         <h3>Komunitas Aktif</h3>
                         <p>Bergabung dengan komunitas peduli lingkungan di seluruh Indonesia.</p>
@@ -74,7 +84,8 @@
             </div>
         </section>
 
-        <section class="stats">
+        <!-- Stats Section -->
+        <section class="stats" aria-label="Statistik pencapaian">
             <div class="container">
                 <h2 class="section-title">Pencapaian Kami</h2>
                 <div class="stats-grid">
@@ -98,7 +109,8 @@
             </div>
         </section>
 
-        <section class="cta-section">
+        <!-- CTA Section -->
+        <section class="cta-section" aria-label="Call to action">
             <div class="container">
                 <div class="cta-card">
                     <h2>Siap Bergabung?</h2>
@@ -109,10 +121,11 @@
         </section>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer role="contentinfo">
         <div class="footer-content">
             <div class="footer-section">
-                <h3><i class="fas fa-recycle"></i> Bank Sampah Nusantara</h3>
+                <h3><i class="fas fa-recycle" aria-hidden="true"></i> Bank Sampah Nusantara</h3>
                 <p>Menuju Indonesia bersih dan berkelanjutan.</p>
             </div>
             <div class="footer-section">
@@ -120,21 +133,57 @@
                 <ul>
                     <li><a href="index.html">Beranda</a></li>
                     <li><a href="tentang.html">Tentang</a></li>
-                    <li><a href="jenis.html">Jenis Sampah</a></li>
+                    <li><a href="jents.html">Jenis Sampah</a></li>
                     <li><a href="kontak.html">Kontak</a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h3>Kontak</h3>
-                <p><i class="fas fa-envelope"></i> info@banksampah.id</p>
-                <p><i class="fas fa-phone"></i> 0812-3456-7890</p>
+                <p><i class="fas fa-envelope" aria-hidden="true"></i> info@banksampah.id</p>
+                <p><i class="fas fa-phone" aria-hidden="true"></i> 0812-3456-7890</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Bank Sampah Nusantara. All Rights Reserved.</p>
+            <p>&copy; <span id="currentYear"></span> Bank Sampah Nusantara. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
+    <script>
+        // Auto-update copyright year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Simple counter animation for stats
+        document.addEventListener('DOMContentLoaded', function() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const element = entry.target;
+                        const target = parseInt(element.getAttribute('data-count'));
+                        const duration = 2000; // 2 seconds
+                        const increment = target / (duration / 16); // 60fps
+                        let current = 0;
+                        
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= target) {
+                                element.textContent = target.toLocaleString();
+                                clearInterval(timer);
+                            } else {
+                                element.textContent = Math.floor(current).toLocaleString();
+                            }
+                        }, 16);
+                        
+                        observer.unobserve(element);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            statNumbers.forEach(stat => observer.observe(stat));
+        });
+    </script>
 </body>
 </html>
