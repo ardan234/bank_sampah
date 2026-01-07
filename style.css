@@ -201,12 +201,25 @@ a {
     line-height: 0;
 }
 
-.hero-wave svg {
+.hero-wave {
+    display: none;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    padding: 150px 0 80px;
     position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 100px;
-    fill: var(--bg-color);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    margin-bottom: -30px;
+}
+
+.hero-wave {
+    display: none;
+}
+
+.features {
+    padding-top: 110px; /* Kompensasi untuk clip-path */
 }
 
 /* Sections */
@@ -919,4 +932,5 @@ footer {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--primary-dark);
+
 }
