@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenis Sampah - Bank Sampah Nusantara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-recycle"></i>
+                    <span>Bank Sampah Nusantara</span>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Beranda</a></li>
+                    <li><a href="tentang.html" class="nav-link"><i class="fas fa-info-circle"></i> Tentang</a></li>
+                    <li><a href="jenis.html" class="nav-link active"><i class="fas fa-trash-alt"></i> Jenis Sampah</a></li>
+                    <li><a href="kontak.html" class="nav-link"><i class="fas fa-envelope"></i> Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Jenis Sampah</h1>
+                <p>Ketahui jenis sampah yang dapat Anda tabung dan manfaatkan</p>
+            </div>
+        </section>
+
+        <section class="waste-types">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="plastik">Plastik</button>
+                    <button class="filter-btn" data-filter="kertas">Kertas</button>
+                    <button class="filter-btn" data-filter="logam">Logam</button>
+                    <button class="filter-btn" data-filter="lainnya">Lainnya</button>
+                </div>
+
+                <div class="waste-grid">
+                    <!-- Plastik -->
+                    <div class="waste-card" data-type="plastik">
+                        <div class="waste-icon">
+                            <i class="fas fa-wine-bottle"></i>
+                        </div>
+                        <h3>Botol Plastik</h3>
+                        <p>Botol plastik PET (jenis 1) dan HDPE (jenis 2) dalam kondisi bersih.</p>
+                        <div class="waste-price">
+                            <span class="price-label">Harga:</span>
+                            <span class="price-value">Rp 3.000/kg</span>
+                        </div>
+                    </div>
+
+                    <div class="waste-card" data-type="plastik">
+                        <div class="waste-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Gelas Plastik</h3>
+                        <p>Gelas plastik PP (jenis 5) bekas minuman, cuci bersih terlebih dahulu.</p>
+                        <div class="waste-price">
+                            <span class="price-label">Harga:</span>
+                            <span class="price-value">Rp 2.500/kg</span>
+                        </div>
+                    </div>
+
+                    <!-- Kertas -->
+                    <div class="waste-card" data-type="kertas">
+                        <div class="waste-icon">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <h3>Kertas Koran</h3>
+                        <p>Koran bekas dalam kondisi kering, tidak basah atau berlumur minyak.</p>
+                        <div class="waste-price">
+                            <span class="price-label">Harga:</span>
+                            <span class="price-value">Rp 2.000/kg</span>
+                        </div>
+                    </div>
+
+                    <div class="waste-card" data-type="kertas">
+                        <div class="waste-icon">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <h3>Kardus</h3>
+                        <p>Kardus bekas kemasan, sebaiknya dilipat rapi untuk menghemat ruang.</p>
+                        <div class="waste-price">
+                            <span class="price-label">Harga:</span>
+                            <span class="price-value">Rp 2.500/kg</span>
+                        </div>
+                    </div>
+
+                    <!-- Logam -->
+                    <div class="waste-card" data-type="logam">
+                        <div class="waste-icon">
+                            <i class="fas fa-beer"></i>
+                        </div>
+                        <h3>Kaleng Aluminium</h3>
+                        <p>Kaleng minuman aluminium, ditekan atau diinjak untuk memadatkan.</p>
+                        <div class="waste-price">
+                            <span class="price-label">Harga:</span>
+                            <span class="price-value">Rp 15.000/kg</span>
+                        </div>
+                    </div>
+
+                    <div class="waste-card" data-type="logam">
+                        <div class="waste-icon">
+                            <i class="fas fa-drum"></i>
+                        </div>
+                        <h3>Kaleng Besi</h3>
+                        <p>Kaleng makanan atau cat, pastikan sudah bersih dari sisa isinya.</p>
+                        <div class="waste-price">
+                            <span class="price-label">Harga:</span>
+                            <span class="price-value">Rp 5.000/kg</span>
+                        </div>
+                    </div>
+
+                    <!-- Lainnya -->
+                    <div class="waste-card" data-type="lainnya">
+                        <div class="waste-icon">
+                            <i class="fas fa-wine-glass"></i>
+                        </div>
+                        <h3>Kaca</h3>
+                        <p>Botol kaca bekas minuman, hati-hati dalam penanganannya.</p>
+                        <div class="waste-price">
+                            <span class="price-label">Harga:</span>
+                            <span class="price-value">Rp 1.500/kg</span>
+                        </div>
+                    </div>
+
+                    <div class="waste-card" data-type="lainnya">
+                        <div class="waste-icon">
+                            <i class="fas fa-oil-can"></i>
+                        </div>
+                        <h3>Minyak Jelantah</h3>
+                        <p>Minyak goreng bekas pakai, simpan dalam wadah tertutup rapat.</p>
+                        <div class="waste-price">
+                            <span class="price-label">Harga:</span>
+                            <span class="price-value">Rp 5.000/liter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="processing-info">
+                    <h2>Proses Pengolahan</h2>
+                    <div class="processing-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Pemilahan</h3>
+                            <p>Sampah dipilah berdasarkan jenis dan kualitasnya</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Pembersihan</h3>
+                            <p>Sampah dibersihkan dari kontaminan dan sisa bahan</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Penimbangan</h3>
+                            <p>Sampah ditimbang untuk menentukan nilai tukarnya</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>Daur Ulang</h3>
+                            <p>Sampah dikirim ke pabrik daur ulang yang bekerja sama</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-recycle"></i> Bank Sampah Nusantara</h3>
+                <p>Menuju Indonesia bersih dan berkelanjutan.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Navigasi</h3>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a href="jenis.html">Jenis Sampah</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <p><i class="fas fa-envelope"></i> info@banksampah.id</p>
+                <p><i class="fas fa-phone"></i> 0812-3456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bank Sampah Nusantara. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

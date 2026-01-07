@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Bank Sampah Nusantara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-recycle"></i>
+                    <span>Bank Sampah Nusantara</span>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Beranda</a></li>
+                    <li><a href="tentang.html" class="nav-link"><i class="fas fa-info-circle"></i> Tentang</a></li>
+                    <li><a href="jenis.html" class="nav-link"><i class="fas fa-trash-alt"></i> Jenis Sampah</a></li>
+                    <li><a href="kontak.html" class="nav-link active"><i class="fas fa-envelope"></i> Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Kontak Kami</h1>
+                <p>Hubungi kami untuk informasi lebih lanjut</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Informasi Kontak</h2>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Alamat</h3>
+                                <p>Jl. Lingkungan Hijau No. 123<br>Jakarta Selatan, 12560</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Telepon & WhatsApp</h3>
+                                <p>0812-3456-7890 (Customer Service)<br>021-1234-5678 (Office)</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>info@banksampah.id<br>cs@banksampah.id</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Jam Operasional</h3>
+                                <p>Senin - Jumat: 08:00 - 17:00<br>Sabtu: 08:00 - 15:00<br>Minggu: Libur</p>
+                            </div>
+                        </div>
+
+                        <div class="social-media">
+                            <h3>Ikuti Kami</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Kirim Pesan</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap</label>
+                                <input type="text" id="name" name="name" required>
+                                <div class="error-message" id="nameError"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="error-message" id="emailError"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Nomor Telepon</label>
+                                <input type="tel" id="phone" name="phone">
+                                <div class="error-message" id="phoneError"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subjek</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Pilih Subjek</option>
+                                    <option value="info">Informasi Umum</option>
+                                    <option value="join">Bergabung dengan Bank Sampah</option>
+                                    <option value="complaint">Keluhan</option>
+                                    <option value="suggestion">Saran</option>
+                                    <option value="other">Lainnya</option>
+                                </select>
+                                <div class="error-message" id="subjectError"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Pesan</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <div class="error-message" id="messageError"></div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Kirim Pesan
+                            </button>
+                        </form>
+
+                        <div id="formMessage" class="form-message"></div>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h2>Pertanyaan yang Sering Diajukan</h2>
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Bagaimana cara bergabung dengan Bank Sampah?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Anda bisa datang langsung ke cabang terdekat dengan membawa KTP dan sampah yang sudah dipilah. Atau hubungi kami melalui form di atas untuk informasi lebih lanjut.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Apa saja yang harus dipersiapkan sebelum membawa sampah?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Sampah harus dipilah berdasarkan jenisnya (plastik, kertas, logam, dll) dan dalam kondisi bersih serta kering. Lihat halaman Jenis Sampah untuk informasi detail.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Berapa lama proses penimbangan dan pencairan?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Proses penimbangan dilakukan saat Anda datang. Pencairan dana bisa langsung atau melalui transfer bank, biasanya membutuhkan waktu 1-3 hari kerja.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-recycle"></i> Bank Sampah Nusantara</h3>
+                <p>Menuju Indonesia bersih dan berkelanjutan.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Navigasi</h3>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a href="jenis.html">Jenis Sampah</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <p><i class="fas fa-envelope"></i> info@banksampah.id</p>
+                <p><i class="fas fa-phone"></i> 0812-3456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bank Sampah Nusantara. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
